@@ -14,9 +14,17 @@ plugins {
 
 scmVersion {
 	
+	useHighestVersion.set(true)
+	tag {
+		//prefix = 'ver'
+		prefix.set("ver")
+		initialVersion({ config, position -> '0.2.0' })
+	  }
+	
 	branchVersionIncrementer.putAll( [
 		'feature/.*' : 'incrementMinor',
 		'main.*' : 'incrementMinor',
+		'release' : ['incrementPrerelease', [initialPreReleaseIfNotOnPrerelease: 'rc1']],
 		 'gradle_versioning' : 'incrementMinor'
 	])
 }
