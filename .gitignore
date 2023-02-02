@@ -1,0 +1,14 @@
+.metadata
+RemoteSystemsTempFiles/
+**/build
+**/bin
+**/.externalToolBuilders
+**/.gradle
+**/.bpmn
+**/.settings
+**/.project
+**/.recommenders
+**/.classpath
+.DS_Store
+libs
+logs
