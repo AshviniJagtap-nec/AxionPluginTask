@@ -30,6 +30,7 @@ scmVersion {
 		'feature/.*' : 'incrementMinor',
 		'main.*' : 'incrementMinor',
 		'release' : ['incrementPrerelease', [initialPreReleaseIfNotOnPrerelease: 'rc1']],
+		'hotfix' : 'incrementPatch',
 		 'gradle_versioning' : 'incrementMinor'
 	])
 }
