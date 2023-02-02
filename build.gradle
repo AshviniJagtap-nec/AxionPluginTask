@@ -6,6 +6,11 @@
  * user guide available at https://docs.gradle.org/4.10.2/userguide/java_library_plugin.html
  */
 
+ import org.apache.tools.ant.filters.*
+ import com.github.zafarkhaja.semver.Version
+ import java.util.regex.Matcher
+ import static String.format
+ 
 plugins {
     // Apply the java-library plugin to add support for Java Library
     id 'java-library'
