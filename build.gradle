@@ -16,6 +16,7 @@ scmVersion {
 	
 	branchVersionIncrementer.putAll( [
 		'feature/.*' : 'incrementMinor',
+		'main.*' : 'incrementMinor',
 		 'gradle_versioning' : 'incrementMinor'
 	])
 }
