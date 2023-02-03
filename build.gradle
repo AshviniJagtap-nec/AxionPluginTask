@@ -34,7 +34,7 @@ scmVersion {
 		 'gradle_versioning' : 'incrementMinor'
 	])
 	
-	localOnly.set(true)
+	//localOnly.set(true)
 	
 	hooks {
         pre("fileUpdate", [file: "README.md", pattern: {v,p -> /(version.) $v/}, replacement: {v, p -> "\$1 $v"}])
@@ -42,7 +42,9 @@ scmVersion {
     }
 	
 	repository {
+		type.set("git")
 		directory.set(project.rootProject.file('./'))
+		remote.set("origin")
 	}
 }
 
